@@ -7,6 +7,8 @@ library(ggplot2)
 library(iNEXT)
 library(vegan)
 library(hillR)
+library(BiocManager)
+library(BiocVersion)
 
 # Load ggplot theme
 
@@ -161,7 +163,7 @@ dataset_second_growth <- sample(dataset_second_growth, length(dataset_second_gro
 
 # Define UI
 ui <- fluidPage(
-    theme = shinytheme("united"),
+    theme = shinythemes::shinytheme("united"),
     titlePanel("NATF320: Biodiversity sampling practical"),
     navbarPage(
         "Butterfly",
